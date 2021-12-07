@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 import scala.io.Source
 
 object Puzzle4 extends App:
-  private val source = Source.fromFile("input4.txt")
+  private val source = Source.fromFile("input/input4.txt")
   val input: Seq[String] = source.getLines().toSeq
   source.close()
 
@@ -62,7 +62,7 @@ object Puzzle4 extends App:
     val maybeWinningBoard = updatedBoards.find(_.isAnyRowOrColumnComplete)
     maybeWinningBoard match {
       case Some(board) => (board, drawnNumber)
-      case None => findWinningBoardAndNumber(numPosition + 1, updatedBoards)
+      case None        => findWinningBoardAndNumber(numPosition + 1, updatedBoards)
     }
 
   val (winningBoard, winningNumber) = findWinningBoardAndNumber(0, boards)

@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 import scala.io.Source
 
 object Puzzle3 extends App:
-  private val source = Source.fromFile("input3.txt")
+  private val source = Source.fromFile("input/input3.txt")
   val input: Seq[String] = source.getLines().toSeq
   source.close()
 

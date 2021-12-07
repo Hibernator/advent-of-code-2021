@@ -3,7 +3,7 @@ package ch.hibernator.adventofcode
 import scala.io.Source
 
 object Puzzle1 extends App {
-  private val source = Source.fromFile("input1.txt")
+  private val source = Source.fromFile("input/input1.txt")
   val input: Seq[String] = source.getLines().toSeq
   source.close()
 

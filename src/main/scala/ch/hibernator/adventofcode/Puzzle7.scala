@@ -5,7 +5,7 @@ import scala.collection.mutable
 import scala.io.Source
 
 object Puzzle7 extends App:
-  private val source = Source.fromFile("input7.txt")
+  private val source = Source.fromFile("input/input7.txt")
   val input: Seq[String] = source.getLines().toSeq
   source.close()
 
