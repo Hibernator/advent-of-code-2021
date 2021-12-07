@@ -1,1 +1,2 @@
-(5 to 1).foreach(println)
+val sth = 3
+val shifted = sth >> 2
